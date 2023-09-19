@@ -1,0 +1,43 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(../fonts/Norse-Bold.otf);
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-side {
+    background-image: url('./images/leaves.jpg');
+    width: 35vw;
+    background-repeat: no-repeat;
+    background-size: auto;
+    color: white;
+    /* font-family: Norse-Bold sans-serif; */
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+}
+
+.first-section {
+    height: 40vh;
+
+}
+
+.second-section {
+    height: 30vh;
+}
+
+.third-section {
+    height: 30vh;
+}
