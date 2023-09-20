@@ -5,49 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
     <div class="container">
         <div class="left-side">
-            <p>photo by Halie West on Unsplash</p>
+            <div class="for-image">
+                <div class="semi-transparent">
+                    <img src="./images/odin-logo.png" alt="odin-logo" height="100px">
+                    <h1>ODIN</h1>
+                </div>
+            </div>
+            <div class="for-footer">
+                <p class="p-footer">Photo by <a class="a-footer" href="https://unsplash.com/photos/25xggax4bSA">Halie West</a> on <a class="a-footer" href="https://unsplash.com/photos/25xggax4bSA">Unsplash</a></p>
+            </div>
         </div>
         <div class="right-side">
             <div class="first-section">
-                <p>This is not a real online service! You have to know this to succeed in life.
-                    Sign up now to get started.
-                </p>
-                <p>You know you want to sign up</p>
+                <h2>This is not a real online service! You have to know this to succeed in life.<br/>
+                    Sign up <em>now</em> to get started.
+                    <br/><br/>
+                    You <em>know</em> you want to sign up
+                </h2>
             </div>
-            <div class="second-section">
-                <form action="#" method="post">
-                    <fieldset>
-                        <legend>Let's Do This</legend>
-
-                        <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" name="first-name">
-
-                        <label for="last-name">Last Name</label>
-                        <input type="text" id="last-name" name="last-name">
-
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email">
-
-                        <label for="phone-number">Phone Number</label>
-                        <input type="tel" id="phone-number" name="phone-number">
-
-                        <label for="password">*Password</label>
-                        <input type="password" id="password" name="password">
-
-                        <label for="confirm-password">Confirm Password</label>
-                        <input type="confirm-password" id="confirm-password" name="confirm-password">
-                    </fieldset>
-                </form>
-            </div>
-            <div class="third-section">
-                <div class="third-section-content">
-                    <button class="create-account">Create Account</button>
-                    <p>Already have an account? Log in</p> 
+            <form action="#" method="post">
+                <div class="second-section">
+                    <h3 style="margin-left: 50px;">Lets do this!</h3>
+                    <div class="form-main-div">
+                        <div class="form-divs">
+                            <div class="form-div">
+                                <label for="first-name">FIRST NAME</label>
+                                <input type="text" id="first-name" name="first-name">
+                            </div>
+                            <div class="form-div">
+                                <label for="email">EMAIL</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                            <div class="form-div">   
+                                <label for="password">PASSWORD</label>
+                                <input type="password" id="password" name="password" required>
+                                <p id="error"></p>
+                            </div>
+                        </div>
+                        <div class="form-divs">
+                            <div class="form-div">
+                                <label for="last-name">LAST NAME</label>
+                                <input type="text" id="last-name" name="last-name">
+                            </div>
+                            <div class="form-div">
+                                <label for="phone-number">PHONE NUMBER</label>
+                                <input type="tel" id="phone-number" name="phone-number">
+                            </div>
+                            <div class="form-div">
+                                <label for="confirm-password">CONFIRM PASSWORD</label>
+                                <input type="password" id="confirm-password" name="confirm-password" required>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div class="third-section">
+                    <button type="submit" class="btn-green">Create Account</button>
+                </div>
+            </form>
+            <div class="hyperlink">
+                <p>Already have an account <a class="login" href"">Log in</a></p>
             </div>
         </div>
     </div>
